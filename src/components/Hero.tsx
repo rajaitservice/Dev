@@ -12,7 +12,7 @@ const Hero = () => {
               Transform Your Data Into <span className="text-gradient">Actionable Insights</span>
             </h1>
             <p className="text-lg text-gray-700 mb-8 max-w-lg">
-              Expert IT consulting specializing in Splunk implementation and Data Engineering solutions to unlock the full potential of your data.
+              Expert IT consulting specializing in Splunk implementation, optimization, and integration to unlock the full potential of your data.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
