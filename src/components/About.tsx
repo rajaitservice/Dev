@@ -3,12 +3,12 @@ import { Check } from 'lucide-react';
 
 const About = () => {
   const benefits = [
-    'Expert team with 10+ years of industry experience',
-    'Certified Splunk architects and data engineers',
-    'End-to-end implementation and support',
-    'Custom solutions tailored to your business needs',
-    'Proven track record with enterprise clients',
-    'Ongoing training and knowledge transfer'
+    'Expert team with 10+ years of Splunk consulting experience',
+    'Certified Splunk Core Consultants and Architects',
+    'End-to-end Splunk services: design, deployment, and optimization',
+    'Integration with Enterprise Security (ES) and User Behavior Analytics (UBA)',
+    'Proven success stories with enterprise Splunk clients',
+    'Ongoing enablement, training, and knowledge transfer'
   ];
 
   return (
@@ -20,10 +20,10 @@ const About = () => {
               Why Choose <span className="text-gradient">Raja IT Service</span>
             </h2>
             <p className="text-gray-700 mb-6 text-lg">
-              We are a specialized IT consulting firm focused on helping organizations harness the power of their data through expert Splunk implementation and cutting-edge Data Engineering solutions.
+              We are a specialized IT consulting firm dedicated to empowering organizations with expert Splunk implementation, optimization, and support. Our focus is on helping businesses unlock the full potential of Splunk to improve visibility, security, and operational efficiency.
             </p>
             <p className="text-gray-700 mb-8 text-lg">
-              Our team of certified professionals brings years of experience across industries, delivering tailored solutions that drive operational efficiency and uncover valuable business insights.
+              With years of proven experience, our certified Splunk professionals deliver solutions tailored to your organization’s unique needs — whether on Splunk Enterprise or Splunk Cloud.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
