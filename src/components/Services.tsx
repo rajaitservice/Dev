@@ -32,22 +32,22 @@ const Services = () => {
   const services = [
     {
       title: 'Splunk Implementation',
-      description: 'Expert deployment and configuration of Splunk for real-time monitoring, troubleshooting, and data visualization.',
+      description: 'Seamless deployment and configuration of Splunk Enterprise and Splunk Cloud for real-time monitoring, troubleshooting, and powerful data visualization.',
       icon: <Search className="h-7 w-7" />
     },
     {
       title: 'Splunk Optimization',
-      description: 'Fine-tune your Splunk environment for peak performance, scalability, and cost efficiency.',
+      description: 'Fine-tuning your Splunk environment for performance, scalability, and cost efficiency, ensuring your investment delivers maximum ROI.',
       icon: <Settings className="h-7 w-7" />
     },
     {
-      title: 'Data Pipeline Development',
-      description: 'Build robust ETL processes and data pipelines that transform raw data into valuable business assets.',
+      title: 'Splunk Enterprise Security (ES) & UBA Integration',
+      description: 'Enhance your security posture by implementing Splunk ES and Splunk UBA, enabling advanced threat detection, risk-based alerting, and behavioral analytics.',
       icon: <Database className="h-7 w-7" />
     },
     {
-      title: 'Big Data Solutions',
-      description: 'Implement scalable big data architectures using modern technologies like Hadoop, Spark, and cloud-native solutions.',
+      title: 'Custom Data Onboarding',
+      description: 'Expert onboarding of diverse data sources, CIM mapping, and data model acceleration to ensure clean, actionable insights.',
       icon: <Server className="h-7 w-7" />
     },
     {
@@ -56,8 +56,8 @@ const Services = () => {
       icon: <LineChart className="h-7 w-7" />
     },
     {
-      title: 'Custom Integration',
-      description: 'Seamlessly connect your data sources and systems with tailored integration solutions and APIs.',
+      title: 'Training & Knowledge Transfer',
+      description: 'Empowering your team through hands-on enablement and training, ensuring long-term success with Splunk.',
       icon: <Code className="h-7 w-7" />
     },
   ];
@@ -68,7 +68,7 @@ const Services = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Specialized Services</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            We offer comprehensive consulting services focused on Splunk implementation and Data Engineering to help your business leverage the full potential of your data assets.
+            We provide end-to-end consulting services dedicated to Splunk — helping organizations maximize value from their machine data through expert implementation, optimization, and integration.
           </p>
         </div>
         
