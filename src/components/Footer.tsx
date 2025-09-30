@@ -16,21 +16,21 @@ const Footer = () => {
               Innovating with curiosity, automating with purpose, delivering IT solutions that exceed expectations.
             </p>
             <div className="flex space-x-4">
-              <a href="#" aria-label="Facebook" className="hover:text-brand-teal transition-colors">
+              {/*<a href="#" aria-label="Facebook" className="hover:text-brand-teal transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
               <a href="#" aria-label="X" className="hover:text-brand-teal transition-colors">
                 <X className="h-5 w-5" />
-              </a>
-              <a href="#" aria-label="LinkedIn" className="hover:text-brand-teal transition-colors">
+              </a>*/}
+              <a href="https://www.linkedin.com/company/raja-it-service/about/" aria-label="LinkedIn" className="hover:text-brand-teal transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" aria-label="Instagram" className="hover:text-brand-teal transition-colors">
+              {/*<a href="#" aria-label="Instagram" className="hover:text-brand-teal transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
               <a href="#" aria-label="YouTube" className="hover:text-brand-teal transition-colors">
                 <Youtube className="h-5 w-5" />
-              </a>
+              </a>*/}
             </div>
           </div>
           
