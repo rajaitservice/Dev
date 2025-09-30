@@ -38,7 +38,7 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-brand-blue/20 to-brand-teal/20 rounded-3xl transform rotate-3"></div>
               <img 
-                src="/public/images/modifiedimage.jpeg" 
+                src="/images/modifiedimage.jpeg" 
                 alt="Data Analytics Dashboard" 
                 className="rounded-3xl shadow-xl relative z-10"
               />
