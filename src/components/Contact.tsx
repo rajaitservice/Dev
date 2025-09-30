@@ -194,7 +194,7 @@ const Contact = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    placeholder="(123) 456-7890"
+                    placeholder="(46) 123-456789"
                     className="w-full"
                   />
                 </div>
@@ -238,7 +238,7 @@ const Contact = () => {
               </Button>
             </form>
 
-            {/* Admin section for setting webhook URL - in production this would be hidden/protected */}
+            {false && ( // Toggle this to true to show admin settings
             <div className="mt-8 pt-8 border-t border-gray-200">
               <h4 className="text-sm font-medium text-gray-500 mb-2">Admin Settings</h4>
               <div>
@@ -258,7 +258,7 @@ const Contact = () => {
                   Enter your Slack webhook URL here to receive form submissions in your Slack workspace.
                 </p>
               </div>
-            </div>
+            </div> )}
           </div>
           
           <div className="bg-gradient-to-br from-brand-blue to-brand-teal rounded-xl shadow-lg p-8 text-white">
@@ -270,7 +270,6 @@ const Contact = () => {
                 <div>
                   <h4 className="font-bold">Email Us</h4>
                   <p className="mt-1">info@rajaitservice.com</p>
-                  <p>support@rajaitservice.com</p>
                 </div>
               </div>
               
@@ -278,8 +277,7 @@ const Contact = () => {
                 <Phone className="h-6 w-6 mt-1" />
                 <div>
                   <h4 className="font-bold">Call Us</h4>
-                  <p className="mt-1">(123) 456-7890</p>
-                  <p>(987) 654-3210</p>
+                  <p className="mt-1">(46) 0720252602</p>
                 </div>
               </div>
               
