@@ -16,7 +16,7 @@ const Contact = () => {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [slackWebhookUrl, setSlackWebhookUrl] = useState('');
+  const [slackWebhookUrl, setSlackWebhookUrl] = useState(import.meta.env.VITE_SLACK_WEBHOOK || '');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
