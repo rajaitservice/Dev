@@ -237,28 +237,6 @@ const Contact = () => {
                 {isSubmitting ? "Sending..." : "Send Message"}
               </Button>
             </form>
-
-            {false && ( // Toggle this to true to show admin settings
-            <div className="mt-8 pt-8 border-t border-gray-200">
-              <h4 className="text-sm font-medium text-gray-500 mb-2">Admin Settings</h4>
-              <div>
-                <label htmlFor="webhookUrl" className="block text-sm font-medium text-gray-700 mb-1">
-                  Slack Webhook URL
-                </label>
-                <Input
-                  id="webhookUrl"
-                  name="webhookUrl"
-                  type="text"
-                  value={slackWebhookUrl}
-                  onChange={handleWebhookChange}
-                  placeholder="https://hooks.slack.com/services/..."
-                  className="w-full text-sm"
-                />
-                <p className="text-xs text-gray-500 mt-1">
-                  Enter your Slack webhook URL here to receive form submissions in your Slack workspace.
-                </p>
-              </div>
-            </div> )}
           </div>
           
           <div className="bg-gradient-to-br from-brand-blue to-brand-teal rounded-xl shadow-lg p-8 text-white">
