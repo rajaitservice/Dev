@@ -22,7 +22,7 @@ const Footer = () => {
               <a href="#" aria-label="X" className="hover:text-brand-teal transition-colors">
                 <X className="h-5 w-5" />
               </a>*/}
-              <a href="https://www.linkedin.com/company/raja-it-service/about/" aria-label="LinkedIn" className="hover:text-brand-teal transition-colors">
+              <a href="https://www.linkedin.com/company/raja-it-service/?viewAsMember=true" aria-label="LinkedIn" target="_blank" className="hover:text-brand-teal transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
               {/*<a href="#" aria-label="Instagram" className="hover:text-brand-teal transition-colors">
