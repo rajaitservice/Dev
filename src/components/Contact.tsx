@@ -26,7 +26,7 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      // Call your 2nd gen Cloud Function instead of Slack directly
+      // POST all fields to your GCP Cloud Function
       const response = await fetch("https://contactslack-45641874921.europe-west1.run.app", {
         method: 'POST',
         headers: {
