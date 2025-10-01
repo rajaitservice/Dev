@@ -159,6 +159,11 @@ const Contact = () => {
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
               </Button>
+
+              {/* Inline privacy notice */}
+              <p className="text-xs text-gray-500 mt-2">
+                By submitting this form, you consent to the processing of your personal data (name, email, phone, company, and message) for the purpose of responding to your inquiry. Your data will be securely delivered to our team via Slack and will not be shared outside our organization.
+              </p>
             </form>
           </div>
           
