@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -16,104 +15,33 @@ const Contact = () => {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [slackWebhookUrl, setSlackWebhookUrl] = useState(import.meta.env.VITE_SLACK_WEBHOOK || '');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const sendToSlack = async (data: typeof formData) => {
-    if (!slackWebhookUrl) {
-      console.error("Slack webhook URL is not set");
-      return false;
-    }
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
 
     try {
-      const slackMessage = {
-        blocks: [
-          {
-            type: "header",
-            text: {
-              type: "plain_text",
-              text: "New Contact Form Submission"
-            }
-          },
-          {
-            type: "divider"
-          },
-          {
-            type: "section",
-            fields: [
-              {
-                type: "mrkdwn",
-                text: `*Name:*\n${data.name}`
-              },
-              {
-                type: "mrkdwn",
-                text: `*Email:*\n${data.email}`
-              }
-            ]
-          },
-          {
-            type: "section",
-            fields: [
-              {
-                type: "mrkdwn",
-                text: `*Phone:*\n${data.phone || 'Not provided'}`
-              },
-              {
-                type: "mrkdwn",
-                text: `*Company:*\n${data.company || 'Not provided'}`
-              }
-            ]
-          },
-          {
-            type: "section",
-            text: {
-              type: "mrkdwn",
-              text: `*Message:*\n${data.message}`
-            }
-          }
-        ]
-      };
-
-      const response = await fetch(slackWebhookUrl, {
+      // Call your 2nd gen Cloud Function instead of Slack directly
+      const response = await fetch("https://contactslack-45641874921.europe-west1.run.app", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(slackMessage),
+        body: JSON.stringify(formData),
       });
 
-      if (!response.ok) {
-        console.error('Failed to send message to Slack');
-        return false;
-      }
-      
-      return true;
-    } catch (error) {
-      console.error('Error sending message to Slack:', error);
-      return false;
-    }
-  };
+      if (!response.ok) throw new Error("Failed to send message");
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    let slackSent = false;
-    
-    try {
-      slackSent = await sendToSlack(formData);
-      
       toast({
         title: "Message sent successfully!",
-        description: slackSent 
-          ? "We've received your message and will get back to you soon." 
-          : "Your message was received, but there was an issue with our notification system. We'll still process your request.",
+        description: "We've received your message and will get back to you soon.",
       });
-      
+
       setFormData({
         name: '',
         email: '',
@@ -122,7 +50,7 @@ const Contact = () => {
         message: ''
       });
     } catch (error) {
-      console.error("Error in form submission:", error);
+      console.error(error);
       toast({
         title: "Error sending message",
         description: "There was an error sending your message. Please try again later.",
@@ -131,11 +59,6 @@ const Contact = () => {
     } finally {
       setIsSubmitting(false);
     }
-  };
-
-  // Admin section to set the webhook URL (typically would be hidden in production)
-  const handleWebhookChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSlackWebhookUrl(e.target.value);
   };
 
   return (
