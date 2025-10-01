@@ -6,7 +6,7 @@ const About = () => {
     'Expert team with 10+ years of Splunk consulting experience',
     'Certified Splunk Core Consultants and Architects',
     'End-to-end Splunk services: design, deployment, and optimization',
-    'Integration with Enterprise Security (ES) and User Behavior Analytics (UBA)',
+    'Integration with Enterprise Security and User Behavior Analytics (UBA)',
     'Proven success stories with enterprise Splunk clients',
     'Ongoing enablement, training, and knowledge transfer'
   ];

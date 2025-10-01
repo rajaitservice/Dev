@@ -144,7 +144,7 @@ const Contact = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Ready to transform your data into actionable insights? Contact us today to discuss how our Splunk and Data Engineering expertise can help your business.
+            Ready to transform your data into actionable insights? Contact us today to discuss how our Splunk expertise can help your business.
           </p>
         </div>
 

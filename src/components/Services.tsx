@@ -32,12 +32,12 @@ const Services = () => {
   const services = [
     {
       title: 'Splunk Implementation',
-      description: 'Seamless deployment and configuration of Splunk Enterprise and Splunk Cloud for real-time monitoring, troubleshooting, and powerful data visualization.',
+      description: 'Seamless deployment and configuration of Splunk Enterprise and Splunk Cloud for real-time monitoring, troubleshooting and powerful data visualization.',
       icon: <Search className="h-7 w-7" />
     },
     {
       title: 'Splunk Optimization',
-      description: 'Fine-tuning your Splunk environment for performance, scalability, and cost efficiency, ensuring your investment delivers maximum ROI.',
+      description: 'Fine-tuning your Splunk environment for performance, scalability and cost efficiency, ensuring your investment delivers maximum ROI.',
       icon: <Settings className="h-7 w-7" />
     },
     {
@@ -47,12 +47,12 @@ const Services = () => {
     },
     {
       title: 'Custom Data Onboarding',
-      description: 'Expert onboarding of diverse data sources, CIM mapping, and data model acceleration to ensure clean, actionable insights.',
+      description: 'Expert onboarding of diverse data sources, CIM mapping and data model acceleration to ensure clean, actionable insights.',
       icon: <Server className="h-7 w-7" />
     },
     {
       title: 'Data Analytics',
-      description: 'Transform your data into actionable insights with advanced analytics, machine learning, and visualization.',
+      description: 'Transform your data into actionable insights with advanced analytics, machine learning and visualization.',
       icon: <LineChart className="h-7 w-7" />
     },
     {
@@ -68,7 +68,7 @@ const Services = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Specialized Services</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            We provide end-to-end consulting services dedicated to Splunk — helping organizations maximize value from their machine data through expert implementation, optimization, and integration.
+            We provide end-to-end consulting services dedicated to Splunk — helping organizations maximize value from their machine data through expert implementation, optimization and integration.
           </p>
         </div>
         
