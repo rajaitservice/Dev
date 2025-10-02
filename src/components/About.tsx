@@ -44,7 +44,7 @@ const About = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-brand-teal/20 to-brand-blue/20 rounded-3xl transform -rotate-3"></div>
               <img 
-                src="/Dev/images/desk.avif" 
+                src="/images/desk.avif" 
                 alt="Team Collaboration" 
                 className="rounded-3xl shadow-xl relative z-10"
               />
